@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import img01 from "./logo.png"
 
 
 const Valid = () => {
   return (
     <div className="max-w-full mx-auto my-4 p-4 bg-white shadow-lg rounded-lg overflow-hidden sm:mx-4 md:mx-8 lg:mx-16 xl:mx-32 2xl:mx-48">
       <div className="flex flex-col items-center">
-        <img src="./src/assets/logo.png" alt="Foto" className="w-1/4 rounded-full mb-4" />
+        <img src={img01} alt="Foto" className="w-1/4 rounded-full mb-4" />
         <h1 className="text-2xl font-bold mb-4">Comparte tus datos para seguir en contacto y darle seguimiento a tu propuesta</h1>
         <form className="w-full max-w-lg">
           <div className="flex flex-wrap -mx-3 mb-6">
