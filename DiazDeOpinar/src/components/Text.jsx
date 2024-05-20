@@ -8,7 +8,9 @@ const Text = () => {
         rows="6"
         cols="50"
         placeholder="Escribe tu texto aquí..."
-        className="border border-gray-300 rounded-md px-4 py-2"
+        className="border border-gray-300 rounded-md px-4 py-2 w-full sm:w-auto"
+        // Aquí he añadido w-full para que ocupe todo el ancho del contenedor
+        // y sm:w-auto para que tenga un ancho automático en pantallas pequeñas
       ></textarea>
     </div>
   );

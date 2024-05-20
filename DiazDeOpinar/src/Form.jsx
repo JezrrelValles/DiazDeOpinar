@@ -39,18 +39,22 @@ function Form() {
       <div className="flex flex-col mb-16">
         <div className="max-w-full mx-auto my-4 p-4 bg-white shadow-lg rounded-lg overflow-hidden sm:mx-4 md:mx-8 lg:mx-16 xl:mx-32 2xl:mx-48">
           <div className="flex flex-col items-center">
-            <img
-              src="./logo.png"
-              alt="Foto"
-              className="w-1/4 rounded-full mb-4"
-            />
+            <Link to="/">
+              <div className="flex justify-center"> {/* Centro la imagen */}
+                <img
+                  src="./logo.png"
+                  alt="Foto"
+                  className="w-1/4 rounded-full mb-4"
+                />
+              </div>
+            </Link>
             <h1 className="text-2xl font-semibold mb-4">
               ¿Cuál de estos temas es más importante para ti?
             </h1>
             <h1 className="text-lg font-bold mb-4">
-              Selecciona las opciones que consideres más importantes
-              en relación con los temas proporcionados a continuación. Recuerda
-              que puedes elegir una o varias opciones según tu criterio.
+              Selecciona las opciones que consideres más importantes en relación
+              con los temas proporcionados a continuación. Recuerda que puedes
+              elegir una o varias opciones según tu criterio.
             </h1>
           </div>
           <div className="mb-4">
@@ -114,7 +118,7 @@ function Form() {
             )}
           </div>
           <Link to="/proposal">
-            <button className="w-full py-2 px-4 bg-[#ef8017] hover:bg-[#222222] text-white font-bold text-lg sm:text-xl md:text-2xl rounded-lg transition-colors duration-300">
+            <button className="w-full py-2 px-4 bg-safety-orange hover:bg-raisin-black text-white font-bold text-lg sm:text-xl md:text-2xl rounded-lg transition-colors duration-300">
               Continuar
             </button>
           </Link>

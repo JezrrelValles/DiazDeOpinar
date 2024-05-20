@@ -42,7 +42,15 @@ const Input = () => {
     <div className="flex flex-col mb-16">
       <div className="max-w-full mx-auto my-4 p-4 bg-white shadow-lg rounded-lg overflow-hidden sm:mx-4 md:mx-8 lg:mx-16 xl:mx-32 2xl:mx-48">
         <div className="flex flex-col items-center">
-          <img src="./logo.png" alt="Foto" className="w-1/4 rounded-full mb-4" />
+        <Link to="/">
+              <div className="flex justify-center"> {/* Centro la imagen */}
+                <img
+                  src="./logo.png"
+                  alt="Foto"
+                  className="w-1/4 rounded-full mb-4"
+                />
+              </div>
+            </Link>
           <h1 className="text-2xl font-bold mb-4">
             Graba, escribe o dibuja lo que tú crees que hace falta para que Parral sea la capital del mundo.
           </h1>
@@ -90,7 +98,7 @@ const Input = () => {
           {renderInputComponent()}
           <Link to="/validate">
             <button 
-              className="w-full my-4 bg-[#ff7800] hover:bg-[#222222] text-white font-bold text-lg sm:text-xl md:text-2xl py-2 px-4 rounded-lg transition-colors duration-300" 
+              className="w-full my-4 bg-safety-orange hover:bg-raisin-black text-white font-bold text-lg sm:text-xl md:text-2xl py-2 px-4 rounded-lg transition-colors duration-300" 
               onClick={handleNextButtonClick}
             >
               Continuar
