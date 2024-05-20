@@ -7,7 +7,7 @@ function App() {
     <div className="flex flex-col mb-16">
       <Card
         image="./gradient.png"
-        buttonText="Haz clic aquí descubrir más"
+        buttonText="Haz clic aquí para descubrir más"
       />
       <Footer />
     </div>
